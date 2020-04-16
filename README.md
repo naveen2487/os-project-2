@@ -35,7 +35,7 @@ void rearrange_process_queue(int pq[],int rt[],int pty[],int n,int running_proce
     pq[running_processes-1] = temp;
     
     }
-    if(rt[pq[0]-1]==0)
+    if(rt[pq[0]-1]=0)
     {   
     	int temp = pq[0];
         for(i=0;i<running_processes;i++)
@@ -147,20 +147,16 @@ int at[10],bt[10],rt[10],pq[10],pty[10],pty1[10],pflag[10],tat[10],wt[10];
 		minptyinc(pty,n);
 
         rearrange_process_queue(pq,rt,pty,n,running_processes);
-
         if(flag == 1)
         running_processes = running_processes - 1;
 }
 printf("\n\nExecution Data:\n");
-   
    printf("|\tProcess\t|\tAT\t|\tBT\t|   Priority   |\tTAT\t|\tWT\t|\n");
    for(i=0;i<n;i++)
    {
        printf("|\t%d\t|\t%d\t|\t%d\t|\t%d\t|\t%d\t|\t%d\t|\n",i+1,at[i],bt[i],pty1[i],tat[i],wt[i]);
    }
-
- printf("\n\nAverage Waiting Time= %f\n",avg_wait_time(wt,n));
+printf("\n\nAverage Waiting Time= %f\n",avg_wait_time(wt,n));
   printf("Avg Turnaround Time = %f\n",avg_turnaround_time(tat,n));
-  
 return 0;
 }
