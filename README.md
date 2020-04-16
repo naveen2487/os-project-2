@@ -71,7 +71,7 @@ int main()
   
 printf("\nEnter the Number of Processes required for the CPU execution=");
 scanf("%d" ,&n);
-printf("\nEnter Time Quantum =");
+printf("\nEnter the Time Quantum for each of the process can avail at a time =");
 scanf("%d" ,&time_quantum);
   if(n <= 0 || time_quantum <= 0)
   {
