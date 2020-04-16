@@ -69,7 +69,7 @@ int main()
   int time_quantum,n;
   int time = 0;
   
-printf("\nEnter Number of Processes =");
+printf("\nEnter the Number of Processes required for the CPU execution=");
 scanf("%d" ,&n);
 printf("\nEnter Time Quantum =");
 scanf("%d" ,&time_quantum);
