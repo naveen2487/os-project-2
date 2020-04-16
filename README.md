@@ -4,9 +4,10 @@
 float avg_wait_time(int wt[], int n)
 {
     float x = 0;
-    int i,sum = 0;
+    int i,
+    sum = 0;
     for(i=0;i<n;i++)
-        sum = sum + wt[i];
+       sum = sum + wt[i];
 x = sum * 1.0;
     x = x / n;
     return x;
